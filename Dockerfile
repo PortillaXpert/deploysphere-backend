@@ -28,4 +28,4 @@ COPY . .
 
 EXPOSE 8000
 
-CMD ["gunicorn","myproject.wsgi:application", "--bind", "0.0.0.0:8000", "--timeout", "300", "--workers", "3"]
+CMD ["gunicorn","deploysphere_backend.wsgi:application", "--bind", "0.0.0.0:8000", "--timeout", "300", "--workers", "3"]
